@@ -9,7 +9,7 @@
 # Vulnerability Details
 + CVE ID: CVE-2024-35511
 + Affected Version: PHPGurukul Men Salon Management System 2.0 
-+ Parameter Name: email
++ Parameter Name: username
 # References
 + https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-35511
 # Description
