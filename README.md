@@ -1,5 +1,3 @@
-# CVE
-Men Salon Management System Using PHP and MySQL
 # PHPGurukul Men Salon Management System 2.0
 + Welcome to the PHPGurukul Men Salon Management System 2.0 repository. This project aims to provide a robust system for Men Salon Management.
 ## Security Vulnerabilities
