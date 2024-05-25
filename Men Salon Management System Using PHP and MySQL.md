@@ -31,4 +31,5 @@ Parameter: username (POST)
 
 ```
 + current database: `msmsdb`
-![image](https://github.com/efekaanakkar/CVEs/assets/130908672/7cf45037-3e64-4fff-8337-86292c34ddd2)
+![Database](https://github.com/efekaanakkar/CVE/assets/130908672/9e7866fb-ae0a-4162-8e6f-141b25c91e96)
+
