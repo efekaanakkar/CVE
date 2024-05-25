@@ -2,7 +2,7 @@
 + Welcome to the PHPGurukul Men Salon Management System 2.0 repository. This project aims to provide a robust system for Men Salon Management.
 ## Security Vulnerabilities
 ### CVE-2024-35511
-+ Description: Vulnerable to SQL Injection via 'Username' parameter.
++ Description: Vulnerable to SQL Injection via 'username' parameter.
 + Affected Version: 2.0
-+ Impact: Attackers can manipulate the 'Username' parameter, potentially gaining unauthorized access.
++ Impact: Attackers can manipulate the 'username' parameter, potentially gaining unauthorized access.
 + Solution: Implement proper input validation and utilize parameterized queries
