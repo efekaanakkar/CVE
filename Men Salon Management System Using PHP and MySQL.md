@@ -5,17 +5,17 @@
 # Software Link
 + https://phpgurukul.com/?sdm_process_download=1&download_id=14066
 # Overview
-+ PHPGurukul Men Salon Management System V2.0 is susceptible to a A notable security weakness stems from inadequate safeguarding of the 'email' parameter within the index.php file. This vulnerability has the potential to be exploited for injecting harmful SQL queries, resulting in unauthorized access and extraction of confidential data from the database.
++ PHPGurukul Men Salon Management System V2.0 is susceptible to a A notable security weakness stems from inadequate safeguarding of the 'Username' parameter within the admin/index.php file. This vulnerability has the potential to be exploited for injecting harmful SQL queries, resulting in unauthorized access and extraction of confidential data from the database.
 # Vulnerability Details
-+ CVE ID: CVE-2024-30998
++ CVE ID: CVE-2024-35511
 + Affected Version: PHPGurukul Men Salon Management System 2.0 
 + Parameter Name: email
 # References
-+ https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-30998
++ https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-35511
 # Description
-+ Inadequate validation and sanitization of the 'email' parameter pave the way for attackers to construct SQL injection queries, circumventing authentication measures and obtaining unauthorized entry to the database.
++ Inadequate validation and sanitization of the 'username' parameter pave the way for attackers to construct SQL injection queries, circumventing authentication measures and obtaining unauthorized entry to the database.
 # Proof of Concept (PoC) : 
-+ `sqlmap -u "http://localhost/msms" --method POST --data "email=test@test.com&sub=submit" -p email --risk 3 --level 3 --dbms mysql --batch --current-db`
++ `sqlmap -u "http://192.168.1.62/msms/admin/index.php" --cookie="PHPSESSID=e6rliepf62icdselerob8iuloj; Security_level=0" --data="username=admin&password=admin&login=Sign+In" -p"username" --random-agent --level 3 --risk 3 -D "msmsdb" --dump --tables`
 
 ```
 ---
