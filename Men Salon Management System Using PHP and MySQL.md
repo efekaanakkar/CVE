@@ -1,4 +1,4 @@
-# CVE-2024-30998-PHPGurukul-Men-Salon-Management-System-2.0-SQL-Injection-Vulnerability (Unauthenticated)
+# CVE-2024-35511-PHPGurukul-Men-Salon-Management-System-2.0-SQL-Injection-Vulnerability (Unauthenticated)
 + Exploit Author: efekaanakkar
 # Vendor Homepage
 + https://phpgurukul.com/men-salon-management-system-using-php-and-mysql
